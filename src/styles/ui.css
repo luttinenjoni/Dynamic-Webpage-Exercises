@@ -1,0 +1,15 @@
+h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+img {
+    width: 50px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    
+}
