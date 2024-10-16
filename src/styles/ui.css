@@ -1,15 +1,19 @@
-h3 {
-    text-align: center;
+img {
+    width: 50px;
+    padding: 15px;
+    
+}
+
+#header {
+    display: flex;
+    align-items: center;
     padding: 10px;
     font-size: xx-large;
 }
 
-img {
-    width: 50px;
-}
-
-div {
+#order {
     display: flex;
     align-items: center;
-    
+    font-size: larger;
+    text-align: left;
 }
