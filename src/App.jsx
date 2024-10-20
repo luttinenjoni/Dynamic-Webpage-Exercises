@@ -1,19 +1,20 @@
-import Header from './components/componentUI'
+import React, { useState } from 'react';
+import Header from './components/componentUI';
+import OrderInfo from './components/orderInfo';
+import OrderForm from './components/orderForm';
 import '/src/styles/ui.css'
-import sampleImage from '/src/images/color-spectrum-1192509_1280.png';
-import { OrderForm, Quantity } from './components/orderForm';
 
+function App () {
+  const [selectedProduct, setSelectedProduct] = useState({ name: 'AMD Ryzen', price: 245 });
+  const [quantity, setQuantity] = useState(1);
 
+  return (
+    <div className="app">
+      <Header></Header>
+      <OrderForm onProductChange={setSelectedProduct} onQuantityChange={setQuantity} />
+      <OrderInfo product={selectedProduct} quantity={quantity} />
+    </div>
+  );
+};
 
-function App() {
-return (   
-<div>
-  <Header image= {sampleImage}/>
-  <OrderForm></OrderForm>
-  <Quantity></Quantity>
-  </div>
-    
-)
-}
-
-export default App
+export default App;
