@@ -8,13 +8,13 @@ const products = [
     const [selectedProductIndex, setSelectedProductIndex] = useState(0);
     const [quantity, setQuantity] = useState(1);
   
-    const handleProductChange = (event) => {
+    function handleProductChange(event) {
       const index = event.target.value;
       setSelectedProductIndex(index);
       onProductChange(products[index]);
     };
   
-    const handleQuantityChange = (action) => {
+    function handleQuantityChange(action) {
       const newQuantity = action === 'increase' ? quantity + 1 : quantity - 1;
       setQuantity(newQuantity > 0 ? newQuantity : 0);
       onQuantityChange(newQuantity > 0 ? newQuantity : 0);

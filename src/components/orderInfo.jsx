@@ -1,5 +1,3 @@
-import React from 'react';
-
 function OrderInfo ({ product, quantity }) {
   const totalPrice = product.price * quantity;
 
