@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import '/src/styles/ui.css'
+import React from "react";
+import PokemonInfo from "./components/componentUI";
 
-function App () {
-
-
+function App() {
   return (
-    <div className="app">
-
+    <div className="App">
+      <h1>Pokémon Information</h1>
+      <PokemonInfo></PokemonInfo>
     </div>
   );
-};
+}
 
 export default App;
