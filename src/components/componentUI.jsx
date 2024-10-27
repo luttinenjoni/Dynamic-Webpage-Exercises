@@ -19,7 +19,7 @@ function PokemonInfo() {
       ) : (
         <p>Loading Pokémon data...</p>
       )}
-      <p>ID of this pokémon is: {pokemonData.id}.</p>
+      
     </div>
   );
 }
