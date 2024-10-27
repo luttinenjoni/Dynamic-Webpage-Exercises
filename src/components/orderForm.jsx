@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const products = [
-  { name: 'AMD Ryzen', price: 245 }, { name: 'palli', price: 666 }
+  { name: 'AMD Ryzen', price: 245 }, { name: 'intel i5 8400', price: 150 }
 ];
 
   function OrderForm ({ onProductChange, onQuantityChange }) {
